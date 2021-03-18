@@ -6,11 +6,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  title = 'awesome app'
   isAuth = false;
 
-  appareilOne = 'Machine à laver';
-  appareilTwo = 'Télévision';
-  appareilThree = 'Ordinateur';
+  appareils = [
+    {
+      name: 'Machine à laver',
+      status: 'éteint'
+    },
+    {
+      name: 'Télévision',
+      status: 'allumé'
+    },
+    {
+      name: 'Ordinateur',
+      status: 'éteint'
+    },
+  ]
+
+  // appareilOne = 'Machine à laver';
+  // appareilTwo = 'Télévision';
+  // appareilThree = 'Ordinateur';
 
 
   constructor(){
